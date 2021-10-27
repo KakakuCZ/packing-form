@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.dimensionsSection {
+  flex: 2;
+}
+
+.statsSection {
+  flex: 2;
+}
+
+.lineRow {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+
+  .lineLabel {
+    font-weight: 500;
+    width: 190px;
+  }
+}
