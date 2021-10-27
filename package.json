@@ -45,6 +45,7 @@
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
     "mini-css-extract-plugin": "0.11.3",
+    "node-sass": "^6.0.1",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.2.1",
@@ -74,8 +75,9 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "tsm --nameFormat none src/ && node scripts/start.js",
+    "build": "tsm --nameFormat none src/ && node scripts/build.js",
+    "tsm-watch": "tsm --nameFormat none src/ --watch",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -152,5 +154,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "typed-scss-modules": "^4.1.1",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
